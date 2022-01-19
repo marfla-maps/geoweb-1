@@ -46,6 +46,12 @@ function addAccidentes() {
 }
 
 
+function canviaColor(color) {
+
+    map.setPaintProperty('place-city-sm', 'text-color', color);
+
+}
+
 function zoomToRutas(valores) {
 
     var coord = valores.split("/");
