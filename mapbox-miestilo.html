@@ -9,6 +9,7 @@
     <link href='css/estilobase.css' rel='stylesheet' />
     <script src="https://gis-master-m2.github.io/geoweb/js/3d.js"></script>
     <script src="https://gis-master-m2.github.io/geoweb/js/rutas.js"></script>
+    <script src='js/utils.js'></script>
     <script>
         var map;
 
@@ -31,7 +32,7 @@
 
             map.on("load", function() {
 
-                add3D("mapbox-dem");
+                // add3D("mapbox-dem");
 
                 addRutas();
                 map.addSource("carrils-bici", {
@@ -53,7 +54,7 @@
                     }
                 }); //fin add layers
 
-
+                addPopupToMap("carrils-bici-layer");
             });
 
 
